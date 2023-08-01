@@ -74,13 +74,13 @@ public class HomeWork4_BinaryTree<V extends Comparable<V>>  {
 
     }
     private Node fixUp(Node h){
-        if(isRead(h.right) && !isRead(h.left)){
+        if(isRed(h.right) && !isRed(h.left)){
             h = leftTurn(h);
         }
-        if(isRead(h.left) && isRead(h.left.left)){
+        if(isRed(h.left) && isRed(h.left.left)){
             h = rightTurn(h);
         }
-        if(isRead(h.right) && isRead(h.left)){
+        if(isRed(h.right) && isRed(h.left)){
             swapColor(h);
         }
         return h;
@@ -109,7 +109,7 @@ public class HomeWork4_BinaryTree<V extends Comparable<V>>  {
     }
 
 
-    private Boolean isRead(Node x){
+    private Boolean isRed(Node x){
         if(x == null){
             return false;
         }
