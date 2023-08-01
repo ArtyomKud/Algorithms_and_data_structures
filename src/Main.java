@@ -35,6 +35,7 @@ public class Main {
         binaryTree.insert(8);
         binaryTree.insert(11);
         binaryTree.insert(17);
+        binaryTree.insert(19);
 
         System.out.println(binaryTree.findNode(8));
 
