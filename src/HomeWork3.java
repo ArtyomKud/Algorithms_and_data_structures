@@ -87,8 +87,6 @@ public class HomeWork3 {
     }
 
 
-
-
     public StringBuilder printNode(){
         StringBuilder str = new StringBuilder("");
         Node node = head;
